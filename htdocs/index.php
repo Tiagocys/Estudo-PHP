@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <?php
+        if(isset($_SESSION['n_autenticado'])):
+    ?>
+    <script>
+        alert("Email ou senha invalidos, por favor verifique suas credenciais.");
+    </script>
+    <?php
+        endif;
+        unset($_SESSION['n_autenticado']);
+    ?>
+        
+
     <div class="div1">
         <form action="login.php" method="post">
             <div class="formDiv">

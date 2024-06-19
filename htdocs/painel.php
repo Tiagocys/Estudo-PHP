@@ -15,5 +15,6 @@ include('verificaLogin.php')
 </head>
 <body>
     <h2>Olá, <?php echo $_SESSION['usuario'];?></h2>
+    <a href="logout.php"><button>Logout</button></a>
 </body>
 </html>

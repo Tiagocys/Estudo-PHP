@@ -36,6 +36,7 @@ if($row == 1) {
     header('location: painel.php');
     exit();
 } else {
+    $_SESSION['n_autenticado'] = true;
     header('location:index.php');
     exit();
 }
