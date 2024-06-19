@@ -2,14 +2,29 @@
     margin: 0;
 }
 
-.div1 {
+.cadastro, .login {
     max-width: 300px;
     margin: 100px auto;
+}
+
+.cadastro {
+    display: none;
 }
 
 .formDiv input, .formDiv button {
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.bt-cadastro p, .bt-login p {
+    font-size: 18px;
+}
+
+.bt-cadastro button, .bt-login button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
 }
 

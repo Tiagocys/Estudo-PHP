@@ -16,5 +16,15 @@ include('verificaLogin.php')
 <body>
     <h2>Olá, <?php echo $_SESSION['usuario'];?></h2>
     <a href="logout.php"><button>Logout</button></a>
+
+    <div id="contas" class="contas">
+        <p>Contas cadastradas:</p>
+        <form action="contas.php" method="post">
+            <input id="nova_conta" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+            <button id="bt_add_conta">Adicionar conta</button>
+        </form>
+        
+    </div>
+    <script src="painel.js"></script>
 </body>
 </html>
